@@ -24,12 +24,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:textAlignment="center"
             android:text="Bienvenido al app de denuncias"/>
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="16dp"
             android:src="@drawable/logo" />
 
         <LinearLayout
@@ -39,8 +40,7 @@
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp">
+                android:layout_height="wrap_content">
 
                 <EditText
                     android:id="@+id/email_input"
@@ -55,7 +55,7 @@
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp">
+                android:layout_marginBottom="50dp">
 
                 <EditText
                     android:id="@+id/password_input"
@@ -70,7 +70,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="5dp"
                 android:text="Inicia sesión"
                 android:textStyle="bold"
                 android:background="@color/colorPrimary"
@@ -80,7 +80,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="5dp"
                 android:text="Registro"
                 android:textStyle="bold"
                 android:background="@color/colorPrimary"
