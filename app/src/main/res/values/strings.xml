@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FirebaseApp2018</string>
+    <string name="app_name">Denuncias Santa Anita</string>
     <string name="facebook_app_id">293992294682371</string>
     <string name="fb_login_protocol_scheme">fb293992294682371</string>
 </resources>
