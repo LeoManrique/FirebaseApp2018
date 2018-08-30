@@ -96,7 +96,8 @@ public class LoginActivity extends AppCompatActivity {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
 
-                    Toast.makeText(LoginActivity.this, "Welcome " + user.getDisplayName(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Welcome " + user.getEmail()
+                            , Toast.LENGTH_SHORT).show();
 
                     // Go MainActivity
                     startActivity(new Intent(LoginActivity.this, MainActivity.class));
@@ -273,6 +274,7 @@ public class LoginActivity extends AppCompatActivity {
                     loginPanel.setVisibility(View.VISIBLE);
                     progressBar.setVisibility(View.GONE);
                     Log.e(TAG, "Google Sign In failed!");
+                    Toast.makeText(this, "Google Sign In failed!", Toast.LENGTH_SHORT).show();
                 }
             }else if(FACEBOOK_SIGNIN_REQUEST == requestCode){
 
