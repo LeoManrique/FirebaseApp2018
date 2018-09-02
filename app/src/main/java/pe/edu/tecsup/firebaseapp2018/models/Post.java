@@ -7,16 +7,14 @@ import java.util.Objects;
 public class Post {
 
     private String id;
-
     private String userid;
-
     private String title;
-
     private String body;
-
-    private String photoUrl;
-
+    private String photourl;
     private Map<String, Boolean> likes = new HashMap<>();
+    private Double latitude;
+    private Double length;
+    private String address;
 
     public String getId() {
         return id;
@@ -50,12 +48,12 @@ public class Post {
         this.body = body;
     }
 
-    public String getPhotoUrl() {
-        return photoUrl;
+    public String getPhotourl() {
+        return photourl;
     }
 
-    public void setPhotoUrl(String photoUrl) {
-        this.photoUrl = photoUrl;
+    public void setPhotourl(String photourl) {
+        this.photourl = photourl;
     }
 
     public Map<String, Boolean> getLikes() {
@@ -66,6 +64,30 @@ public class Post {
         this.likes = likes;
     }
 
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(Double latitude) {
+        this.latitude = latitude;
+    }
+
+    public Double getLength() {
+        return length;
+    }
+
+    public void setLength(Double length) {
+        this.length = length;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     @Override
     public String toString() {
         return "Post{" +
@@ -73,7 +95,7 @@ public class Post {
                 ", userid='" + userid + '\'' +
                 ", title='" + title + '\'' +
                 ", body='" + body + '\'' +
-                ", photoUrl='" + photoUrl + '\'' +
+                ", photoUrl='" + photourl + '\'' +
                 ", likes=" + likes +
                 '}';
     }

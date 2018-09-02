@@ -163,7 +163,7 @@ public class RegisterActivity extends AppCompatActivity {
                             post.setTitle(title);
                             post.setBody(body);
                             post.setUserid(currentUser.getUid());
-                            post.setPhotoUrl(task.getResult().toString());
+                            post.setPhotourl(task.getResult().toString());
 
                             postRef.setValue(post).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override

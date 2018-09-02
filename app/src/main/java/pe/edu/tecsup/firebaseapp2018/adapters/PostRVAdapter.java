@@ -133,8 +133,8 @@ public class PostRVAdapter extends RecyclerView.Adapter<PostRVAdapter.ViewHolder
         });
 
         // Download photo from Firebase Storage
-        if(post.getPhotoUrl() != null){
-            Picasso.with(holder.itemView.getContext()).load(post.getPhotoUrl()).into(holder.pictureImage);
+        if(post.getPhotourl() != null){
+            Picasso.with(holder.itemView.getContext()).load(post.getPhotourl()).into(holder.pictureImage);
         }else{
             holder.pictureImage.setImageResource(R.drawable.ic_picture);
         }

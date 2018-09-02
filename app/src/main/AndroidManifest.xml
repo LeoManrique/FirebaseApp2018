@@ -3,7 +3,7 @@
     package="pe.edu.tecsup.firebaseapp2018">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!-- Permission: Allow to access the camera -->
     <uses-permission android:name="android.permission.CAMERA" />
     <!-- Permission: Allow to access the external storage -->
@@ -37,15 +37,21 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.MainActivity" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.GeoActivity" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.MapsActivity" android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.LoginActivity"
+            android:name=".activities.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name="activities.RegisterActivity" />
 
